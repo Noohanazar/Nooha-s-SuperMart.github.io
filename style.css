@@ -1,0 +1,260 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e2caca;
+    color: #9b8080;
+}
+
+header {
+    background-color: #b57b7b;
+    color: #f4eaea;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f4e3e3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #faeaea;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-section {
+    background: url(./intro-1673380828.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.658);
+    background-blend-mode: overlay;
+    border-radius: 10px;
+    min-height: 50vh;
+    padding: 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px palevioletred;
+}
+
+.section-description {
+    color: white;
+}
+
+.section-image {
+    max-width: 70%;
+    height: auto;
+}
+
+.prime-picks-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.prime-pick {
+    width: 30%;
+    background-color: #e4b8b8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prime-pick img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.offers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.offer {
+    background-color: #e0b4b4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(112, 161, 124, 0.1);
+}
+
+.offer img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #a27272;
+    color: rgb(230, 210, 210);
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #df8d8d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: rgb(233, 217, 217);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #b97373;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .prime-pick {
+        width: 45%;
+    }
+
+    .offers-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .intro-section {
+        padding: 20px;
+    }
+
+    .prime-pick {
+        width: 100%;
+    }
+
+    .offers-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+
+    .intro-section h1 {
+        font-size: 28px;
+    }
+
+    .intro-section p {
+        font-size: 16px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
